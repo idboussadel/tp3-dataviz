@@ -1,17 +1,28 @@
 body {
   margin: 0;
-  padding: 20px;
+  padding: 10px 0;
   font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
+  background-color: white;
 }
 
 #container {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
-  background: white;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content-wrapper {
+  display: flex;
+  margin-top: 80px;
+  align-items: flex-end;
+  padding-left: 110px;
+}
+
+.map-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
 }
 
 h1 {
@@ -67,7 +78,8 @@ path:hover {
 }
 
 .legend {
-  margin-top: 20px;
+  flex: 0 0 250px;
+  margin-bottom: 220px;
 }
 
 .legend-title {
@@ -75,15 +87,26 @@ path:hover {
   margin-bottom: 5px;
 }
 
-.legend-scale {
+.legend-items {
   display: flex;
-  height: 20px;
-  margin-bottom: 5px;
+  flex-direction: column;
+  gap: 8px;
 }
 
-.legend-labels {
+.legend-item {
   display: flex;
-  justify-content: space-between;
-  font-size: 12px;
-  color: #666;
+  align-items: center;
+  gap: 10px;
+}
+
+.legend-color {
+  width: 30px;
+  height: 20px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.legend-range {
+  font-size: 14px;
+  color: #333;
 }
