@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Carte déchets D3.js</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1>Évolution des déchets DEEE en France</h1>
+      <p class="subtitle">
+        Tonnage de déchets d'équipements électriques et électroniques par
+        département
+      </p>
+
+      <div id="controls">
+        <input id="slider" type="range" value="0" min="0" max="6" step="1" />
+        <div id="year">2009</div>
+      </div>
+
+      <div id="map"></div>
+
+      <div class="legend">
+        <div class="legend-title">Tonnage (tonnes)</div>
+        <div class="legend-scale" id="legend-scale"></div>
+        <div class="legend-labels">
+          <span id="legend-min">0</span>
+          <span id="legend-max">10000</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="tooltip" id="tooltip"></div>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
